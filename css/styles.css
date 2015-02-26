@@ -27,8 +27,8 @@ body {
 }
 /*layout*/
 html {
-	background-image:url('coffeecup.jpg');
-	background-size: auto 768px;
+	background-image:url('../images/impossible-golf.jpg');
+	background-size: auto 1000px;
 	background-repeat: no-repeat;
 	background-position: top center;
 	margin-top: 30px;
