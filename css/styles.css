@@ -27,8 +27,8 @@ body {
 }
 /*layout*/
 html {
-	background-image:url('../images/impossible-golf.jpg');
-	background-size: auto 1000px;
+	background-image:url('../images/hole.jpg');
+	background-size: auto 1200px;
 	background-repeat: no-repeat;
 	background-position: top center;
 	margin-top: 30px;
