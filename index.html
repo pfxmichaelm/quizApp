@@ -5,6 +5,8 @@
 	<title>Golf Triva Quiz</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" href="css/styles.css"/>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="js/ap.js"></script>	
 </head>
 <body>
 	<h1>Golf Triva Quizz</h1>
@@ -12,16 +14,19 @@
 	<div id="question_wrapper">
 		<span class="question">Question #1: What were the first golf balls made of?</span><br>
 		<div id="answer_holder">
-		  <input type="radio" name="option" class="option" value="0"><span class="answer">blah blah</span><br>
-		  <input type="radio" name="option" class="option" value="1"><span class="answer">blah blah</span><br>
-		  <input type="radio" name="option" class="option" value="2"><span class="answer">blah blah</span><br>
-		  <input type="radio" name="option" class="option" value="3"><span class="answer">blah blah</span><br>
+		  <input type="radio" name="option" class="option" value="0"><span class="answer">Round globs of cured rubber</span><br>
+		  <input type="radio" name="option" class="option" value="1"><span class="answer">Thin leather filled with ground corn cobs</span><br>
+		  <input type="radio" name="option" class="option" value="2"><span class="answer">Thin leather covering stuffed with feathers</span><br>
+		  <input type="radio" name="option" class="option" value="3"><span class="answer">Layers of thin leather wrapped around a small pebble</span><br>
 		</div>
 	</div>
 	<div id="button_holder">
 	  <input class="btn" type="button" id="begin" value="Tee it up">
 	  <input class="btn" type="button" id="submit" value="Submit Answer">	
-	  <input class="btn" type="button" id="results" value="Results">
+	  <input class="btn" type="button" id="results" value="Score">
+	</div>
+	<div id="fact_holder">
+		<span id="question_fact">fact holder</span>
 	</div>	
 
 </body>

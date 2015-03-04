@@ -45,24 +45,28 @@ h4 {
 	color: white;
 }
 #question_wrapper {
-	width: 500px;
-	height: 500px;
+	width: 25em;
+	height: 10em;
 	margin: 0 auto;
-	font-family: sans-serif;
-	color: white;
+	font-family: arial;
+	color: #60F6A8;
 	font-size: 2.5em;
-	padding-top: 100px;
+	padding-top: 2em;
 	display: none;
 }
 
 #answer_holder {
 	display: inline-block;
-	margin-left: 50px;
-	margin-top: 20px;
-	line-height: 35px;
+	/*margin-left: 10px;*/
+	margin-top: 1.5em;
+	line-height: 1.25em;
+	font-size: 1em;
+	color: #D6F660;
 }
 #button_holder {
 	text-align: center;
+	position: relative;
+	margin-bottom: 1em;
 }
 .btn {
 	color: white;
@@ -72,10 +76,9 @@ h4 {
 	text-shadow: none;
 	border-style: none;
 	border-radius: 20px;
-	padding: 0.25em 0.25em;
+	padding: 0.5em 0.5em;
 	font-size: 2.5em;
 	outline: none;
-	position: absolute;
 	top: 85%;
 	
 }
@@ -94,8 +97,8 @@ h4 {
 
 }
 input[type="radio"]:checked + span {
-	width: 1.5em;
-	height: 1.5em;
+	width: 2.5em;
+	height: 2.5em;
 	background-color: red;
 }
 #question_score {
@@ -103,14 +106,16 @@ input[type="radio"]:checked + span {
 }
 #fact_holder {
 	display: inline-block;
-	font-family: 'SWEETASCANDY';
 	font-size: 30px;
 	text-align:center;
-	color: #360000;
+	color: white;
 	width: 450px;
 	vertical-align:top;
 	margin-left: 30px;
 	margin-top: 70px;
+}
+#question_fact {
+	display: none;
 }
 #final {
 	font-size: 30px;
