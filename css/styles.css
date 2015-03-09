@@ -39,7 +39,7 @@ h1 {
 	font-size: 5em;
 	text-align:center;
 	padding: 2em 0 0 0;
-	color: white;	
+	color: #FFFF00;	
 }
 h4 {
 	color: white;
@@ -52,9 +52,9 @@ h4 {
 	margin-bottom: 0.6em;
 }
 .btn {
-	color: white;
+	color: #3E3F38;
 	width: auto;
-	background-color: #FF9E00;
+	background-color: #FFF500;
 	border-color: #f15a29; 
 	text-shadow: none;
 	border-style: none;
@@ -66,9 +66,10 @@ h4 {
 	
 }
 .btn:hover {
-	background-color: #d9400e;
+	background-color: #52FF00;
 	border-color: #cf3d0e;
 	cursor: pointer;
+	color: black;
 }
 
 #submit {
