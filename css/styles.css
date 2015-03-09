@@ -54,7 +54,7 @@ h4 {
 .btn {
 	color: #3E3F38;
 	width: auto;
-	background-color: #FFF500;
+	background-color: #FFFF99;
 	border-color: #f15a29; 
 	text-shadow: none;
 	border-style: none;
@@ -83,21 +83,22 @@ h4 {
 
 #question_wrapper {
 	display: inline-block;
-	width: 25em;
+	width: 30em;
 	height: 10em;
 	margin: 0 auto;
 	font-family: arial;
-	color: #00FF0A;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	color: #99FF9D;
 	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 	font-size: 2.5em;
 	padding-top: 2em;
 	display: none;	
 }
-#answer_holder {	
-	font-family: sans-serif;
-	font-weight: normal;
+#answer_holder {
+	font-weight: 200;
 	margin: .5em;
-	color: #FFFF00;
+	color: #FFFF99;
 }
 form {
 	margin: 15em 0;
