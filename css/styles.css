@@ -44,29 +44,12 @@ h1 {
 h4 {
 	color: white;
 }
-#question_wrapper {
-	width: 25em;
-	height: 10em;
-	margin: 0 auto;
-	font-family: arial;
-	color: #60F6A8;
-	font-size: 2.5em;
-	padding-top: 2em;
-	display: none;
-}
 
-#answer_holder {
-	display: inline-block;
-	/*margin-left: 10px;*/
-	margin-top: 1.5em;
-	line-height: 1.25em;
-	font-size: 1em;
-	color: #D6F660;
-}
 #button_holder {
 	text-align: center;
 	position: relative;
-	margin-bottom: 1em;
+	margin-top: 3em;
+	margin-bottom: 0.6em;
 }
 .btn {
 	color: white;
@@ -77,7 +60,7 @@ h4 {
 	border-style: none;
 	border-radius: 20px;
 	padding: 0.5em 0.5em;
-	font-size: 2.5em;
+	font-size: 2.0em;
 	outline: none;
 	top: 85%;
 	
@@ -94,13 +77,90 @@ h4 {
 }
 #results {
 	display: none;
+}
 
+
+#question_wrapper {
+	display: inline-block;
+	width: 25em;
+	height: 10em;
+	margin: 0 auto;
+	font-family: arial;
+	color: #00FF0A;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+	font-size: 2.5em;
+	padding-top: 2em;
+	display: none;	
 }
-input[type="radio"]:checked + span {
-	width: 2.5em;
-	height: 2.5em;
-	background-color: red;
+#answer_holder {	
+	font-family: sans-serif;
+	font-weight: normal;
+	margin: .5em;
+	color: #FFFF00;
 }
+form {
+	margin: 15em 0;
+}
+.dclass {
+    clear: both;
+	margin: 0 2em;
+}
+label {
+  width: 50em;
+}
+/* hide input */
+input.radio:empty {
+	margin-left: -99em;
+}
+/* style label */
+input.radio:empty ~ label {
+	position: relative;
+	float: left;
+	line-height: 1.0em;
+	text-indent: 2.25em;
+	margin-top: 1em;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+input.radio:empty ~ label:before {
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 1.5em;
+	background: #FEFECC;
+	border-radius: 3px 0 0 3px;
+}
+/* toggle hover */
+input.radio:hover:not(:checked) ~ label:before {
+	content:'\2714';
+	text-indent: .5em;
+	color: #52FF00;
+}
+input.radio:hover:not(:checked) ~ label {
+	color: #52FF00;
+}
+/* toggle on */
+input.radio:checked ~ label:before {
+	content:'\2714';
+	text-indent: .5em;
+	color: #FEFECC;
+	background-color: #52FF00;
+}
+input.radio:checked ~ label {
+	color: #52FF00;
+}
+/* radio focus */
+input.radio:focus ~ label:before {
+	box-shadow: 0 0 0 1px #999;
+}
+
+
 #question_score {
 	display: inline-block;
 }
