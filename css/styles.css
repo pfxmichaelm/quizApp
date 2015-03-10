@@ -173,8 +173,9 @@ input.radio:focus ~ label:before {
 	color: white;
 	width: 450px;
 	vertical-align:top;
-	margin-left: 30px;
-	margin-top: 70px;
+	margin: 0 auto;
+	/*margin-left: 30px;*/
+	/*margin-top: 70px;*/
 }
 #question_fact {
 	display: none;

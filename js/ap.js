@@ -46,6 +46,11 @@ $(document).ready(function() {
     $('#submit').click(function() {
     	console.log('submit');
     	$('#question_fact').show();
+    	$("input[type='radio']:checked").each(function() {
+    		var label = $(this).val("label");
+    		console.log("label: " + label);
+    	})
+
     })
 
 
