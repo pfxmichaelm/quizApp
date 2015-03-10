@@ -36,6 +36,16 @@ $(document).ready(function() {
 		fact: ""
 	}]
 
+	var idx = 0,
+	  score = 0;
+
+	function populateQuestion() {
+		$('question').text(questions[idx].question);
+		$('radio').each(function(index,radio) {
+			radio.next('label').text(questions[idx].answers[index]);
+		});
+	}
+
 	$('#begin').click(function() {
         console.log('click');
         $('#begin').hide();
@@ -46,12 +56,25 @@ $(document).ready(function() {
     $('#submit').click(function() {
     	console.log('submit');
     	$('#question_fact').show();
-    	$("input[type='radio']:checked").each(function() {
-    		var label = $(this).val("label");
-    		console.log("label: " + label);
-    	})
+    	var inputVal = $("input[type='radio']:checked").val();
 
-    })
+    	if (inputVal == questions[idx].correct) {
+    		//message
+    		score += 1;
+    	} else {
+    		//message
+    	}
+    	//fact info
+    	idx += 1;
 
+    	if (idx == questions.length) {
+    		endQuiz();
+    	} else {
+    		$("input[type = 'radio']:checked").attr('checked', false);
+    		populateQuestion();
+    	}
 
+    });
+
+    populateQuestion();
 });
