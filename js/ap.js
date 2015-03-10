@@ -40,9 +40,12 @@ $(document).ready(function() {
 	  score = 0;
 
 	function populateQuestion() {
-		$('question').text(questions[idx].question);
-		$('radio').each(function(index,radio) {
-			radio.next('label').text(questions[idx].answers[index]);
+		console.log("popQues: " + idx)
+		$('.question').text(questions[idx].question);
+		$('.radio').each(function(index,radio) {
+			console.log("labels")
+			$("input[type = 'radio']").text(questions[idx].answers[index]);
+			//radio.next('label').text(questions[idx].answers[index]);
 		});
 	}
 
@@ -66,11 +69,13 @@ $(document).ready(function() {
     	}
     	//fact info
     	idx += 1;
+    	console.log("index: " + idx)
 
     	if (idx == questions.length) {
     		endQuiz();
     	} else {
-    		$("input[type = 'radio']:checked").attr('checked', false);
+    		$("input[type='radio']:checked").attr('checked', false);
+    		console.log("Else, not finished")
     		populateQuestion();
     	}
 
