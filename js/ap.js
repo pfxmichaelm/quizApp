@@ -8,7 +8,7 @@ $(document).ready(function() {
 		fact: "The first golf balls were made of thin leather stuffed with feathers. Tightly-packed feathers made balls that flew the farthest. Feather balls were used until 1848."
 		},
 		{
-		question: "", 
+		question: "What...........2", 
 		answers: [""],
 		qnum: 1,
 		correct: 1,
@@ -43,8 +43,8 @@ $(document).ready(function() {
 		console.log("popQues: " + idx)
 		$('.question').text(questions[idx].question);
 		$('.radio').each(function(index,radio) {
-			console.log("labels")
-			$("input[type = 'radio']").text(questions[idx].answers[index]);
+			console.log("pop labels " + index + " " + radio + " " +$("input[type = 'radio']").text(questions[idx].answers[index]))
+			$("input[type = 'radio'.next]").text(questions[idx].answers[index]);
 			//radio.next('label').text(questions[idx].answers[index]);
 		});
 	}
