@@ -36,10 +36,10 @@ html {
 /*elements*/
 h1 {
 	font-family: 'Rocket Script';
-	font-size: 5em;
+	font-size: 5.5em;
 	text-align:center;
 	padding: 2em 0 0 0;
-	color: #FFFF00;	
+	color: #05FF7E;	
 }
 h4 {
 	color: white;
@@ -66,7 +66,7 @@ h4 {
 	
 }
 .btn:hover {
-	background-color: #52FF00;
+	background-color: #FFFEDB;
 	border-color: #cf3d0e;
 	cursor: pointer;
 	color: black;
@@ -82,22 +82,26 @@ h4 {
 
 
 #question_wrapper {
-	display: inline-block;
-	width: 30em;
+	display: none;
+	text-align: center;
+	width: 35em;
 	height: 10em;
 	margin: 0 auto;
-	font-family: arial;
+	font-family: 'Courgette', cursive;
 	font-weight: 600;
 	letter-spacing: 0.1em;
 	color: #99FF9D;
 	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-	font-size: 2.5em;
+	font-size: 3em;
 	padding-top: 2em;
-	display: none;	
 }
 #answer_holder {
-	font-weight: 200;
-	margin: .5em;
+	text-align: left;
+	letter-spacing: 0;
+	line-height: 1.5em;
+	font-weight: 100;
+	margin-top: 0.5em;
+	margin-left: 5.5em;
 	color: #FFFF99;
 }
 form {
@@ -108,7 +112,7 @@ form {
 	margin: 0 2em;
 }
 label {
-  width: 55em;
+  width: 60em;
 }
 /* hide input */
 input.radio:empty {
@@ -167,12 +171,11 @@ input.radio:focus ~ label:before {
 	display: inline-block;
 }
 #fact_holder {
-	display: inline-block;
 	font-size: 30px;
-	text-align:center;
+	text-align: center;
 	color: white;
-	width: 450px;
-	vertical-align:top;
+	width: 35em;
+	vertical-align: top;
 	margin: 0 auto;
 	/*margin-left: 30px;*/
 	/*margin-top: 70px;*/
