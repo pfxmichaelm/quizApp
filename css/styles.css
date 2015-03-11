@@ -47,9 +47,9 @@ h4 {
 
 #button_holder {
 	text-align: center;
-	position: relative;
-	margin-top: 3em;
-	margin-bottom: 0.6em;
+	/*position: relative;*/
+	/*margin-top: 1em;
+	margin-bottom: 0.6em;*/
 }
 .btn {
 	color: #3E3F38;
@@ -59,10 +59,10 @@ h4 {
 	text-shadow: none;
 	border-style: none;
 	border-radius: 20px;
-	padding: 0.5em 0.5em;
-	font-size: 2.0em;
+	padding: 0.25em 0.25em;
+	font-size: 1.8em;
 	outline: none;
-	top: 85%;
+	/*top: 85%;*/
 	
 }
 .btn:hover {
@@ -71,12 +71,15 @@ h4 {
 	cursor: pointer;
 	color: black;
 }
-
+#begin {
+	top: 85%;
+	margin-top: 10em;
+}
 #submit {
 	display: none;
 
 }
-#results {
+#score {
 	display: none;
 }
 
@@ -85,7 +88,7 @@ h4 {
 	display: none;
 	text-align: center;
 	width: 35em;
-	height: 10em;
+	height: 8em;
 	margin: 0 auto;
 	font-family: 'Courgette', cursive;
 	font-weight: 600;
@@ -167,23 +170,28 @@ input.radio:focus ~ label:before {
 }
 
 
-#question_score {
-	display: inline-block;
-}
 #fact_holder {
 	font-size: 30px;
 	text-align: center;
 	color: white;
 	width: 35em;
 	vertical-align: top;
-	margin: 0 auto;
+	margin: 3em auto;
 	/*margin-left: 30px;*/
 	/*margin-top: 70px;*/
 }
 #question_fact {
 	display: none;
 }
-#final {
-	font-size: 30px;
+#score_holder {
+	text-align: center;
+	font-family: 'Courgette', cursive;
+	font-size: 4.5em;
+	color: #FFFE02;
+	width: 10em;
+	/*vertical-align: top;*/
+	margin: 2em auto;
+}
+#questions_score {
 	line-spacing: 35px;
 }

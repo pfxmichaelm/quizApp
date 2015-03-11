@@ -51,7 +51,14 @@ $(document).ready(function() {
 
 	function endQuiz() {
 		console.log("End Quiz - Score: " + score + " of " + questions.length);
-
+        $('#submit').hide();
+        $('#score').show();
+        $('#score').click(function() {
+            $('#question_fact').hide();
+            $('#question_wrapper').hide();
+            $('#score').hide();
+            $('#questions_score').text("Score: " + score + " of " + questions.length + " Correct");
+        });
 	}
 
 	$('#begin').click(function() {
