@@ -72,10 +72,11 @@ h4 {
 	color: black;
 }
 #begin {
-	top: 85%;
-	margin-top: 10em;
+	/*top: 10%;*/
+	margin-top: 8em;
 }
 #submit {
+	margin-top: 1em;
 	display: none;
 
 }
@@ -89,7 +90,8 @@ h4 {
 	text-align: center;
 	width: 35em;
 	height: 8em;
-	margin: 0 auto;
+	margin: 1em 0;
+	/*margin: 0 auto;*/
 	font-family: 'Courgette', cursive;
 	font-weight: 600;
 	letter-spacing: 0.1em;
@@ -103,17 +105,14 @@ h4 {
 	letter-spacing: 0;
 	line-height: 1.5em;
 	font-weight: 100;
-	margin-top: 0.5em;
+	margin-top: 0.75em;
 	margin-left: 5.5em;
 	color: #FFFF99;
 }
-form {
-	margin: 15em 0;
-}
-.dclass {
+/*.dclass {
     clear: both;
-	margin: 0 2em;
-}
+	margin: 0 3em;
+}*/
 label {
   width: 60em;
 }
@@ -123,7 +122,7 @@ input.radio:empty {
 }
 /* style label */
 input.radio:empty ~ label {
-	position: relative;
+	position: absolute;
 	float: left;
 	line-height: 1.0em;
 	text-indent: 2.25em;
@@ -135,20 +134,20 @@ input.radio:empty ~ label {
 	user-select: none;
 }
 input.radio:empty ~ label:before {
-	position: absolute;
+	position: relative;
 	display: block;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	content: '';
-	width: 1.5em;
+	width: 2.5em;
 	background: #FEFECC;
 	border-radius: 3px 0 0 3px;
 }
 /* toggle hover */
 input.radio:hover:not(:checked) ~ label:before {
-	content:'\2714';
-	text-indent: .5em;
+	content: '\2714';
+	text-indent: 0.5em;
 	color: #52FF00;
 }
 input.radio:hover:not(:checked) ~ label {
@@ -156,7 +155,7 @@ input.radio:hover:not(:checked) ~ label {
 }
 /* toggle on */
 input.radio:checked ~ label:before {
-	content:'\2714';
+	content: '\2714';
 	text-indent: .5em;
 	color: #FEFECC;
 	background-color: #52FF00;
