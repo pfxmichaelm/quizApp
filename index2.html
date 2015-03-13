@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Golf Triva Quiz</title>
+		<!--<link rel="stylesheet" type="text/css" href="css/reset.css"/>-->
+		<link rel="stylesheet" href="style.css"/>
+		<link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'/>
+		<script src="http://code.jquery.com/jquery.min.js"></script>
+		<script src="app.js"></script>
+	</head>
+	<body>
+		<h1>Golf Triva Quizz</h1>
+		<div id="question_wrapper">
+			<div class="question"></div>
+			<div id="answer_holder">
+				<form>
+					<div class="dclass">
+						<input type="checkbox" name="checkbox" id="checkbox-1" class="checkbox" value="1" />
+						<label for="checkbox-1"></label>
+					</div>
+					<div class="dclass">
+						<input type="checkbox" name="checkbox" id="checkbox-2" class="checkbox" value="2" />
+						<label for="checkbox-2"></label>
+					</div>
+					<div class="dclass">
+						<input type="checkbox" name="checkbox" id="checkbox-3" class="checkbox" value="3" />
+						<label for="checkbox-3"></label>
+					</div>
+					<div class="dclass">
+						<input type="checkbox" name="checkbox" id="checkbox-4" class="checkbox" value="4" />
+						<label for="checkbox-4"></label>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="button_holder">
+			<input class="btn" type="button" id="begin" value="Tee it up">
+			<input class="btn" type="button" id="submit" value="Submit Answer">
+			<input class="btn" type="button" id="score" value="Score">
+		</div>
+		<div id="fact_holder">
+			<span id="question_fact"></span>
+		</div>
+		<div id="score_holder">
+			<span id="questions_score"></span>
+		</div>
+</body>
+</html>

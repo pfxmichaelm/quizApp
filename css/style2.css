@@ -1,0 +1,150 @@
+html, body {
+	margin: auto;
+	width: 100%;
+}
+
+h1 {
+	font-family: 'Rocket Script';
+	font-size: 5.5em;
+	text-align: center;
+	padding: 1em 0 0 0;
+	color: #05FF7E;
+}
+
+h4 {
+	color: white;
+}
+
+/*containers*/
+
+#question_wrapper {
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	font-family: 'Courgette', cursive;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	color: #99FF9D;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.question {
+	text-align: center;
+	padding-top: 2em;
+	font-size: 3em;
+}
+
+#answer_holder {
+	font-size: 2.5em;
+	padding-top: 1em;
+	text-align: center;
+	letter-spacing: 0;
+	line-height: 1.5em;
+	font-weight: 100;
+	color: #FFFF99;
+	width: 100%;
+}
+
+#answer_holder form {
+	display: inline-block;
+	text-align: left;
+}
+
+#button_holder {
+	margin: auto;
+	text-align: center;
+}
+
+#fact_holder {
+	font-family: 'Courgette', cursive;
+	font-size: 2em;
+	text-align: center;
+	color: white;
+	width: 100%;
+	vertical-align: top;
+	margin: 1em auto;
+}
+
+#question_fact {
+	display: none;
+}
+
+#score_holder {
+	text-align: center;
+	font-family: 'Courgette', cursive;
+	font-size: 4.5em;
+	color: #FFFE02;
+	width: 100%;
+	margin: 1em auto;
+}
+
+#questions_score {
+	line-spacing: 35px;
+}
+
+/*buttons*/
+
+.btn {
+	color: #3E3F38;
+	background-color: #FFFF99;
+	border-color: #f15a29;
+	text-shadow: none;
+	border-style: none;
+	border-radius: 20px;
+	padding: 0.25em 0.25em;
+	font-size: 1.8em;
+	outline: none;
+	display: inline;
+}
+
+.btn:hover {
+	background-color: #FFFEDB;
+	border-color: #cf3d0e;
+	cursor: pointer;
+	color: black;
+}
+
+#begin {
+	margin-top: 1em;
+}
+
+#submit {
+	margin-top: 1em;
+	display: none;
+}
+
+#score {
+	margin-top: 1em;
+	display: none;
+}
+
+/*checkboxes*/
+
+.checkbox {
+	-webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 1 1px 2px rgbs(0,0,0,0,05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 18px;
+	border-radius: 3px;
+}
+
+.checkbox:active, checkbox:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.checkbox:checked {
+	background-color: #e9ecec;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+
+.checkbox:checked:before {
+	content: '\2714';
+	font-size: 28px;
+	top: 0px;
+	left: 6px;
+	color: #99a1a7;
+}
+
