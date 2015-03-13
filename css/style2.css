@@ -1,10 +1,14 @@
 html, body {
 	margin: auto;
 	width: 100%;
+	background-image:url('../images/hole.jpg');
+	background-size: auto 1200px;
+	background-repeat: no-repeat;
+	background-position: top center;	
 }
 
 h1 {
-	font-family: 'Rocket Script';
+	font-family: '../fonts/Rocket Script';
 	font-size: 5.5em;
 	text-align: center;
 	padding: 1em 0 0 0;
@@ -18,6 +22,7 @@ h4 {
 /*containers*/
 
 #question_wrapper {
+	display: none;
 	text-align: center;
 	vertical-align: middle;
 	width: 100%;
