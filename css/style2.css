@@ -135,29 +135,33 @@ h4 {
 	-webkit-appearance: none;
 	background-color: #fafafa;
 	border: 1px solid #cacece;
-	box-shadow: 1 1px 2px rgba(0,0,0,0,0.4), inset 0px -2px 3px -2px rgba(0,0,0,0.4);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
 	padding: 18px;
 	border-radius: 8px;
+	display: inline-block;
+	position: relative;
 }
 
 .checkbox:active, checkbox:checked:active {
-	box-shadow: 1 1px 2px rgba(0,0,0,0.4), inset 0px -1px 3px -2px rgba(0,0,0,0.4);
+	box-shadow: 1 1px 2px rgba(0,0,0,0.4), inset 0px -1px 3px -2px rgba(0,0,0,0.4);box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
 }
 
 .checkbox:checked {
 	background-color: #e9ecec;
 	border: 1px solid #adb8c0;
-	box-shadow: 1 1px 2px rgba(0,0,0,0.4), inset 0px -2px 3px -2px rgba(0,0,0,0.4);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
 	/*box-shadow: 0 1px 2px rgba(0,0,0,0.4), inset 0px -15px 10px -12px rgba(0,0,0,0.4), inset 15px 10px -12px rgba(255,255,255,0.4);*/
 	color: #99a1a7;
 }
 
 .checkbox:checked:before {
 	content: '\2714';
-	font-size: 3px;
+	font-size: 28px;
+	position: absolute;
 	top: 0px;
 	left: 6px;
-	color: #99a1a7;
+	/*color: #99a1a7;*/
+	color: red;
 
 
 /*.squaredThree label:after {
