@@ -42,10 +42,10 @@ $(document).ready(function() {
 	function populateQuestion() {
 		console.log("popQues: " + idx)
 		$('.question').text(questions[idx].question);
-		$('.checkbox').each(function(index,checkbox) {
-			$(checkbox).text(questions[idx].answers[index]);
+		$('.radio').each(function(index,radio) {
+			$(radio).text(questions[idx].answers[index]);
 			//radio.next('label').text(ans);
-            $(checkbox).next('label').text(questions[idx].answers[index]);
+            $(radio).next('label').text(questions[idx].answers[index]);
 		});
 	}
 
@@ -72,7 +72,7 @@ $(document).ready(function() {
     	console.log('submit');
     	$('#question_fact').text(questions[idx].fact);
     	$('#question_fact').show();
-    	var inputVal = $("input[type='checkbox']:checked").val();
+    	var inputVal = $("input[type='radio']:checked").val();
     	console.log("inputVal: " + inputVal);
     	console.log("correct " + questions[idx].correct);
 
@@ -89,7 +89,7 @@ $(document).ready(function() {
     	if (idx == questions.length) {
     		endQuiz();
     	} else {
-    		$("input[type='checkbox']:checked").attr('checked', false);
+    		$("input[type='radio']:checked").attr('checked', false);
     		console.log("Else, not finished" + " score: " + score)
     		populateQuestion();
     	}
