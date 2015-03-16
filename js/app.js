@@ -57,6 +57,23 @@ $(document).ready(function() {
             $('#question_fact').hide();
             $('#question_wrapper').hide();
             $('#score').hide();
+            if (score == 5) {
+            	$('#score_comments').text("Eagle Round....Excelent Job!");
+            	$('#score_comments').css('color', 'rgb(255, 62, 5)');
+            	$('#trophy').attr('src', 'images/first-prize-trophy-cup.jpg');
+            } else if (score == 4) {
+            	$('#score_comments').text("Birdie Round....Great Job!");
+            } else if (score == 3) {
+            	$('#score_comments').text("Par Round....Decent Job!");
+            } else if (score == 2) {
+            	$('#score_comments').text("Bogy Round....Golf Knowledge Needs Work!");
+            } else if (score == 1) {
+            	$('#score_comments').text("Double Bogy Round....Really!!");
+            } else if (score == 0) {
+            	$('#score_comments').text("Have you ever heard of the game of golf??");
+            	$('#score_comments').css('color', 'rgb(5, 217, 255)');
+            	$('#trophy').attr('src', 'images/angry-golf-ball.jpg');
+            }
             $('#questions_score').text("Score: " + score + " of " + questions.length + " Correct");
         });
 	}

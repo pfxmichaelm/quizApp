@@ -1,48 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Golf Triva Quiz</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
-	<link rel="stylesheet" href="css/styles.css"/>
-	<link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'/>
-    <script src="http://code.jquery.com/jquery.min.js"></script>
-    <script src="js/ap.js"></script>	
-</head>
-<body>
-	<h1>Golf Triva Quizz</h1>
-
-	<div id="question_wrapper">
-		<span class="question"></span><br>
-		<div id="answer_holder">
-		  <div class="dclass">
-		      <input type="radio" name="radio" id="radio0" class="radio" value="1" />
-		      <label for="radio0"></label>
-		  </div>
-		  <div class="dclass">
-		      <input type="radio" name="radio" id="radio1" class="radio" value="2" />
-		      <label for="radio1"></label>
-		  </div>
-		  <div class="dclass">
-		      <input type="radio" name="radio" id="radio2" class="radio" value="3" />
-		      <label for="radio2"></label>
-		  </div>
-		  <div class="dclass">
-		      <input type="radio" name="radio" id="radio3" class="radio" value="4" />
-		      <label for="radio3"></label>
-		  </div>
+	<head>
+		<meta charset="UTF-8">
+		<title>Golf Triva Quiz</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
+		<link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'/>
+		<script src="http://code.jquery.com/jquery.min.js"></script>
+		<script src="js/app.js"></script>
+	</head>
+	<body>
+		<h1>Golf Triva Quizz</h1>
+		<div id="question_wrapper">
+			<div class="question"></div>
+			<div id="answer_holder">
+				<form>
+					<div class="dclass">
+						<input type="radio" name="radio" id="radio-1" class="radio" value="1" />
+						<label for="radio-1"></label>
+					</div>
+					<div class="dclass">
+						<input type="radio" name="radio" id="radio-2" class="radio" value="2" />
+						<label for="radio-2"></label>
+					</div>
+					<div class="dclass">
+						<input type="radio" name="radio" id="radio-3" class="radio" value="3" />
+						<label for="radio-3"></label>
+					</div>
+					<div class="dclass">
+						<input type="radio" name="radio" id="radio-4" class="radio" value="4" />
+						<label for="radio-4"></label>
+					</div>
+				</form>
+			</div>
 		</div>
-	</div>
-	<div id="button_holder">
-	  <input class="btn" type="button" id="begin" value="Tee it up">
-	  <input class="btn" type="button" id="submit" value="Submit Answer">	
-	  <input class="btn" type="button" id="score" value="Score">
-	</div>
-	<div id="fact_holder">
-		<span id="question_fact"></span>
-	</div>	
-	<div id="score_holder">
-		<span id="questions_score"></span>
-	</div>
+		<div id="button_holder">
+			<input class="btn" type="button" id="begin" value="Tee it up">
+			<input class="btn" type="button" id="submit" value="Submit Answer">
+			<input class="btn" type="button" id="score" value="Score">
+		</div>
+		<div id="fact_holder">
+			<span id="question_fact"></span>
+		</div>
+		<div id="score_holder">
+			<span id="score_comments"></span>
+			<br>
+			<span id="questions_score"></span>
+			<br>
+			<img id="trophy" src="">
+		</div>
+		<div>
+			
+		</div>
 </body>
 </html>
